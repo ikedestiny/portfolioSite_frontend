@@ -12,8 +12,8 @@
     "html2canvas": "^1.4.1",
     "jspdf": "^2.5.2",
     "myblog": "file:",
-    "react": "^19.0.0",
-    "react-dom": "^19.0.0",
+    "react": "^18.0.0",
+    "react-dom": "^18.0.0",
     "react-router-dom": "^7.0.2",
     "react-scripts": "5.0.1",
     "web-vitals": "^2.1.4"
