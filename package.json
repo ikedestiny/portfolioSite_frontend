@@ -10,6 +10,7 @@
     "ajv-keywords": "^5.1.0",
     "bootstrap": "^5.3.3",
     "html2canvas": "^1.4.1",
+    "html2pdf": "^0.0.11",
     "jspdf": "^2.5.2",
     "react": "^19.0.0",
     "react-dom": "^19.0.0",
