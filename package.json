@@ -12,9 +12,14 @@
     "html2canvas": "^1.4.1",
     "jspdf": "^2.5.2",
     "myblog": "file:",
+<<<<<<< HEAD
     "react": "^19.0.0",
     "react-dom": "^19.0.0",
     "react-icons": "^5.4.0",
+=======
+    "react": "^18.0.0",
+    "react-dom": "^18.0.0",
+>>>>>>> 81a928a9e1fc5b87dc0c48711bf0ed0ec4f82ee6
     "react-router-dom": "^7.0.2",
     "react-scripts": "5.0.1",
     "web-vitals": "^2.1.4"
