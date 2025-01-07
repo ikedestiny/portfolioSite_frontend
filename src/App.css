@@ -2,37 +2,159 @@
   text-align: center;
 }
 
+#navbar {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  background-color: #333;
+  color: white;
+  padding: 1rem;
+  text-align: center;
+  z-index: 1000; /* Ensures the navbar is on top of other elements */
+  margin-bottom: 1rem;
+}
+
 .App-logo {
   height: 40vmin;
   pointer-events: none;
+  width: 6rem;
+  border-radius: 50px;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+/* home */
+
+
+/* blog */
+
+.blogHome {
+  margin: 2rem;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+/* General styles for the body */
+body {
+  font-family: "Arial", sans-serif;
+  line-height: 1.6;
+  margin: 0;
+  padding: 0;
+  background-color: #f9f9f9;
+  color: #333;
+}
+
+/* Blog main container */
+.mainBlog {
+  max-width: 800px;
+  margin: 20px auto;
+  background: #fff;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* Blog image */
+.mainBlog img {
+  max-width: 70%;
+  height: auto;
+  border-radius: 8px;
+  margin-bottom: 20px;
+}
+
+/* Blog title */
+.mainBlog h1 {
+  font-size: 2.4em;
+  font-weight: bold;
+  color: #222;
+  margin-bottom: 10px;
+}
+
+/* Blog metadata (date and author) */
+.blog-meta {
   display: flex;
-  flex-direction: column;
-  align-items: center;
+  justify-content: space-between;
+  font-size: 0.9em;
+  color: #666;
+  margin-bottom: 20px;
+  border-bottom: 1px solid #eaeaea;
+  padding-bottom: 10px;
+}
+
+.blog-meta span {
+  font-style: italic;
+}
+
+/* Blog content paragraphs */
+.mainBlog p {
+  font-size: 1.1em;
+  line-height: 1.8;
+  text-align: justify;
+  margin-bottom: 20px;
+}
+
+/* Add styles for blockquote (optional) */
+.mainBlog blockquote {
+  font-size: 1.2em;
+  font-style: italic;
+  color: #555;
+  border-left: 4px solid #ccc;
+  margin: 20px 0;
+  padding-left: 15px;
+}
+
+/* Add hover effect to links (if any) */
+.mainBlog a {
+  color: #007bff;
+  text-decoration: none;
+}
+
+.mainBlog a:hover {
+  text-decoration: underline;
+}
+
+.blogs {
+  display: flex;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  flex-wrap: wrap;
 }
 
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+.blog {
+  > img {
+    width: 10rem;
+    height: 8rem;
+    margin: 10px;
   }
-  to {
-    transform: rotate(360deg);
+  width: 15%;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  padding: 5px;
+  margin: 10px;
+
+  > a {
+    text-decoration: none;
+    color: black;
+  }
+}
+
+.page-title {
+  font-family: "Arial", sans-serif; /* Clean and modern font */
+  font-size: 2.5rem; /* Adjust the size as needed */
+  color: #333; /* Dark gray color */
+  text-align: center; /* Center align the title */
+  margin-top: 20px; /* Add spacing from the top */
+  margin-bottom: 20px; /* Add spacing below */
+  text-transform: uppercase; /* Convert text to uppercase */
+  letter-spacing: 2px; /* Add spacing between letters */
+  line-height: 1.5; /* Adjust line height */
+  background: linear-gradient(#eeedec, #884a1b); /* Gradient text effect */
+  -webkit-background-clip: text; /* Show only the text on the gradient */
+  -webkit-text-fill-color: transparent; /* Make the text transparent */
+}
+
+@media (max-width: 768px) {
+  .page-title {
+    font-size: 2rem; /* Adjust size for smaller screens */
+  }
+}
+
+@media (max-width: 480px) {
+  .page-title {
+    font-size: 1.5rem; /* Further reduce size for very small screens */
   }
 }

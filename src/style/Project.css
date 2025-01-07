@@ -1,0 +1,119 @@
+/* .main {
+  margin-top: 10rem;
+}
+.projects {
+  padding: 1vw;
+  display: flex;
+  align-items: center;
+}
+
+.project {
+  border: 3px solid white;
+  background-color: black;
+  max-width: fit-content;
+  min-height: 200px;
+  padding: 5px;
+  border-radius: 5px;
+  margin: 10px;
+}
+
+.project_control {
+  display: flex;
+  justify-content: center;
+  align-content: space-evenly;
+  background-color: white;
+}
+
+a {
+  text-decoration: none;
+  border: 1px solid white;
+  margin: auto;
+  padding: 5px;
+  border-radius: 5px;
+}
+
+h3,
+label {
+  color: grey;
+}
+
+.addpContainer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+} */
+
+.project-card {
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  margin: 20px;
+  transition: transform 0.3s ease;
+}
+
+.project-card:hover {
+  transform: translateY(-10px);
+}
+
+.project-card-header {
+  background-color: #007bff;
+  color: #fff;
+  padding: 15px;
+  text-align: center;
+}
+
+.project-title {
+  margin: 0;
+  font-size: 1.5em;
+}
+
+.project-card-body {
+  padding: 20px;
+}
+
+.project-description {
+  margin-bottom: 20px;
+  color: white;
+}
+
+.project-controls {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.project-link {
+  text-decoration: none;
+  color: #007bff;
+  margin-right: 10px;
+  transition: color 0.3s ease;
+}
+
+.project-link:hover {
+  color: #0056b3;
+}
+
+.project-delete-btn {
+  background-color: #dc3545;
+  color: #fff;
+  border: none;
+  padding: 10px 15px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.project-delete-btn:hover {
+  background-color: #c82333;
+}
+
+.projects {
+  padding: 1vw;
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+}
+.main {
+  margin-top: 10rem;
+}
