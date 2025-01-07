@@ -8,7 +8,7 @@ export default function Projects() {
 
     useEffect(() => {
         get_all();
-    }, []);
+    }, [get_all]);
 
     return (
         <div className="main">
