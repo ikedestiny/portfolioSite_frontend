@@ -1,54 +1,34 @@
+import '../style/navbar.css';
+
 export default function Navbar() {
     return (
-        <nav id="navbar" className="navbar navbar-expand-lg bg-dark" style={{ color: 'white' }}>
-            <div className="container-fluid">
-                <a className="navbar-brand" href="#">
-                    <img src="/logo.webp" className="App-logo logo img-fluid" alt="..." />
+        <nav id="navbar">
+            <div className="navbar-container">
+                <a className="navbar-logo" href="#">
+                    <img src="/logo.webp" className="logo" alt="Logo" />
                 </a>
-                <button
-                    className="navbar-toggler"
-                    type="button"
-                    data-bs-toggle="collapse"
-                    data-bs-target="#navbarSupportedContent"
-                    aria-controls="navbarSupportedContent"
-                    aria-expanded="false"
-                    aria-label="Toggle navigation"
-                >
-                    <span className="navbar-toggler-icon"></span>
-                </button>
-                <div className="collapse navbar-collapse" id="navbarSupportedContent">
-                    <ul className="navbar-nav me-auto mb-2 mb-lg-0">
+
+                <div className="navbar-links">
+                    <ul className="nav-list">
                         <li className="nav-item">
-                            <a className="home nav-link active" style={{ color: 'white' }} aria-current="page" href="/">
-                                Home
-                            </a>
+                            <a className="nav-link active" href="/">Home</a>
                         </li>
                         <li className="nav-item">
-                            <a className="nav-link active" style={{ color: 'white' }} aria-current="page" href="/blog">
-                                Blog
-                            </a>
+                            <a className="nav-link" href="/blog">Blog</a>
                         </li>
                         <li className="nav-item">
-                            <a className="nav-link active" style={{ color: 'white' }} aria-current="page" href="/resume">
-                                Resume
-                            </a>
+                            <a className="nav-link" href="/resume">Resume</a>
                         </li>
                         <li className="nav-item">
-                            <a className="nav-link active" style={{ color: 'white' }} aria-current="page" href="/projects">
-                                Projects
-                            </a>
+                            <a className="nav-link" href="/projects">Projects</a>
                         </li>
                         <li className="nav-item">
-                            <a className="nav-link active" style={{ color: 'white' }} aria-current="page" href="/contact">
-                                Contact
-                            </a>
+                            <a className="nav-link" href="/contact">Contact</a>
                         </li>
                     </ul>
-                    <form className="d-flex">
-                        <input className="form-control me-2" type="search" placeholder="Search" aria-label="Search" />
-                        <button className="btn btn-outline-success" type="submit">
-                            Search
-                        </button>
+                    <form className="search-form">
+                        <input className="search-input" type="search" placeholder="Search" aria-label="Search" />
+                        <button className="search-btn" type="submit">Search</button>
                     </form>
                 </div>
             </div>

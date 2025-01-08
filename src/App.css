@@ -1,7 +1,7 @@
 .App {
   text-align: center;
 }
-
+/* 
 #navbar {
   position: fixed;
   top: 0;
@@ -11,18 +11,20 @@
   padding: 1rem;
   text-align: center;
   z-index: 1000; /* Ensures the navbar is on top of other elements */
-  margin-bottom: 1rem;
-}
+/* margin-bottom: 1rem; */
+/* } */
+*/ 
 
-.App-logo {
+
+
+/* .App-logo {
   height: 40vmin;
   pointer-events: none;
   width: 6rem;
   border-radius: 50px;
-}
+} */
 
 /* home */
-
 
 /* blog */
 

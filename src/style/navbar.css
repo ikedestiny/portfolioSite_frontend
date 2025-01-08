@@ -1,0 +1,199 @@
+/* Navbar container */
+#navbar {
+  padding: 0.8rem 1rem;
+}
+
+/* Navbar background and text color */
+.navbar {
+  background-color: #212529; /* Dark background */
+  color: white;
+}
+
+/* Logo image */
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+  width: 6rem;
+  border-radius: 50px;
+}
+
+/* Navbar links */
+.nav-link {
+  color: #ffffff; /* White text */
+  margin-right: 1rem;
+  transition: color 0.3s ease-in-out;
+}
+
+.nav-link:hover {
+  color: #00d1b2; /* Highlight color */
+}
+
+/* Active link */
+.nav-link.active {
+  font-weight: bold;
+  text-decoration: underline;
+}
+
+/* Search form */
+.form-control {
+  border: 1px solid #6c757d;
+  background-color: #343a40;
+  color: white;
+}
+
+.form-control:focus {
+  border-color: #00d1b2;
+  box-shadow: 0 0 5px rgba(0, 209, 178, 0.5);
+}
+
+.btn-outline-success {
+  color: #00d1b2;
+  border-color: #00d1b2;
+}
+
+.btn-outline-success:hover {
+  background-color: #00d1b2;
+  color: white;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .nav-link {
+    margin-right: 0.5rem;
+  }
+
+  .form-control {
+    margin-bottom: 0.5rem;
+  }
+}
+/* Navbar container */
+#navbar {
+  background-color: #222;
+  padding: 1rem 2rem;
+}
+
+/* Navbar logo */
+.navbar-logo {
+  display: inline-block;
+}
+
+.navbar-logo .logo {
+  height: 40px;
+  width: auto;
+}
+
+/* Navbar container for links */
+.navbar-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+/* Navbar links */
+.navbar-links {
+  display: flex;
+  align-items: center;
+}
+
+/* List of navigation items */
+.nav-list {
+  display: flex;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+/* Individual nav items */
+.nav-item {
+  margin-right: 1.5rem;
+}
+
+/* Links styling */
+.nav-link {
+  color: #ffffff;
+  font-size: 1rem;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.nav-link:hover {
+  color: #00d1b2; /* Accent color on hover */
+}
+
+.nav-link.active {
+  color: #00d1b2;
+  font-weight: bold;
+}
+
+/* Search form styling */
+.search-form {
+  display: flex;
+  align-items: center;
+}
+
+.search-input {
+  padding: 0.5rem;
+  font-size: 1rem;
+  border-radius: 20px;
+  border: 1px solid #444;
+  background-color: #333;
+  color: white;
+  margin-right: 0.5rem;
+}
+
+.search-input:focus {
+  outline: none;
+  border-color: #00d1b2;
+}
+
+.search-btn {
+  padding: 0.5rem 1rem;
+  background-color: #00d1b2;
+  border: none;
+  border-radius: 20px;
+  color: white;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.search-btn:hover {
+  background-color: #00b89a;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .navbar-container {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .navbar-links {
+    width: 100%;
+    margin-top: 1rem;
+  }
+
+  .nav-list {
+    flex-direction: column;
+    width: 100%;
+  }
+
+  .nav-item {
+    margin-right: 0;
+    margin-bottom: 0.8rem;
+  }
+
+  .search-form {
+    width: 100%;
+    margin-top: 1rem;
+  }
+
+  .search-input {
+    width: 100%;
+    margin-bottom: 0.5rem;
+  }
+
+  .search-btn {
+    width: 100%;
+  }
+}

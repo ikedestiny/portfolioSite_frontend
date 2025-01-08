@@ -26,8 +26,9 @@ h2 {
   padding: 1rem;
   font-family: "Courier New", Courier, monospace;
   display: flex;
+  flex-wrap: wrap;
   justify-content: space-between;
-  margin-top: 5vw;
+  margin-top: 15rem;
 }
 .desc-im {
   display: flex;
@@ -111,7 +112,7 @@ b {
   max-width: 600px;
   text-align: center;
   color: white;
-  width: 20vw;
+  width: fit-content;
   height: auto;
   margin-top: auto;
 }
@@ -122,6 +123,7 @@ b {
 .stack-list {
   list-style: none;
   padding: 0;
+  width: fit-content;
 }
 .stack-list li {
   margin: 0.5rem 0;
