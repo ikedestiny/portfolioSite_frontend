@@ -1,6 +1,11 @@
 /* Navbar container */
 #navbar {
   padding: 0.8rem 1rem;
+  position: fixed;
+  left: 0;
+  right: 0;
+  top: 0;
+  z-index: 1000;
 }
 
 /* Navbar background and text color */
@@ -32,6 +37,7 @@
 .nav-link.active {
   font-weight: bold;
   text-decoration: underline;
+  color: #00d1b2;
 }
 
 /* Search form */

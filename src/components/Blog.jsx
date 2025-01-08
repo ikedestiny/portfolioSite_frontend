@@ -42,23 +42,8 @@ export default function Blog() {
             </div>
 
 
-
+            <h2>Also check out</h2>
             <div className="blogs">
-                <div className="blog">
-                    <img src="/logo.webp" class=" img-fluid" alt="..." />
-                    <a href="">
-                        <p> quod sunt architecto corporis ab. Provident modi eaque molestiae, accusantium quaerat aperiam aut quae reiciendis error praesentium necessitatibus magnam. Vel.</p></a>
-                </div>
-                <div className="blog">
-                    <img src="/logo.webp" class=" img-fluid" alt="..." />
-                    <a href="">
-                        <p> quod sunt architecto corporis ab. Provident modi eaque molestiae, accusantium quaerat aperiam aut quae reiciendis error praesentium necessitatibus magnam. Vel.</p></a>
-                </div>
-                <div className="blog">
-                    <img src="/logo.webp" class=" img-fluid" alt="..." />
-                    <a href="">
-                        <p>ab. Provident modi eaque molestiae, accusantium quaerat aperiam aut quae reiciendis error praesentium necessitatibus magnam. Vel.</p></a>
-                </div>
                 <div className="blog">
                     <img src="/logo.webp" class=" img-fluid" alt="..." />
                     <a href="">

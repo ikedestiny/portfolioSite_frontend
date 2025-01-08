@@ -12,7 +12,7 @@ export default function Projects() {
 
     return (
         <div className="main">
-            <h1>All projects</h1>
+            <h1 className='page-title mt-5'>All projects</h1>
             <div className="projects">
                 {projects.map(project => (
                     <Project

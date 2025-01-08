@@ -1,0 +1,82 @@
+.home {
+  font-family: "Arial", sans-serif;
+  color: #333;
+  background-image: url("/public/backMe1.png");
+  background-repeat: no-repeat;
+  min-height: 100vh;
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+  text-align: center;
+  margin-top: 6vh;
+}
+
+.header {
+  background: rgba(0, 0, 0, 0.7);
+  padding: 50px 20px;
+  border-radius: 10px;
+  margin-bottom: 50px;
+  color: #fff;
+}
+
+.header h1 {
+  font-size: 36px;
+  font-weight: bold;
+}
+
+.header p {
+  font-size: 18px;
+  margin-top: 10px;
+}
+
+section {
+  width: 100%;
+  max-width: 800px;
+  margin-bottom: 40px;
+  padding: 20px;
+  background: rgba(255, 255, 255, 0.7);
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+section:hover {
+  background: rgba(255, 255, 255, 1);
+}
+
+section h2 {
+  font-size: 28px;
+  margin-bottom: 15px;
+  color: #283c86;
+}
+
+ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+ul li {
+  font-size: 18px;
+  margin: 8px 0;
+}
+
+button {
+  padding: 10px 20px;
+  background-color: #283c86;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+button a {
+  text-decoration: none;
+  color: #fff;
+}
+
+button:hover {
+  background-color: #45a247;
+}
