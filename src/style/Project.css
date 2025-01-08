@@ -50,6 +50,12 @@ label {
   background-position: center;
 }
 
+@media (max-width: 768px) {
+  .main {
+    margin-top: 48vh;
+  }
+}
+
 .project-card {
   background-color: #fff;
   border-radius: 10px;

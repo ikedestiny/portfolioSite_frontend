@@ -8,6 +8,20 @@
   margin-top: 7vh;
   background-color: #f9f9f9;
 }
+.contact-home {
+  margin-top: 10vh;
+  background-image: url("/public/projectsBack.png");
+  min-height: 100vh;
+  background-size: cover;
+  background-position: center;
+}
+
+@media (max-width: 768px) {
+  .blogHome,
+  .contact-home {
+    margin-top: 48vh;
+  }
+}
 
 /* General styles for the body */
 body {

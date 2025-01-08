@@ -30,6 +30,12 @@ h2 {
   justify-content: space-between;
   margin-top: 15rem;
 }
+
+@media (max-width: 768px) {
+  .resume-home {
+    margin-top: 46vh;
+  }
+}
 .desc-im {
   display: flex;
   flex-direction: column;

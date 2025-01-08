@@ -1,24 +1,21 @@
 /* Navbar container */
 #navbar {
-  padding: 0.8rem 1rem;
+  padding: 1rem 2rem;
   position: fixed;
   left: 0;
   right: 0;
   top: 0;
   z-index: 1000;
+  height: fit-content;
 }
 
-/* Navbar background and text color */
-.navbar {
-  background-color: #212529; /* Dark background */
-  color: white;
+#navbar:hover {
+  height: fit-content;
 }
 
-/* Logo image */
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-  width: 6rem;
+.logo {
+  height: 4vw;
+  width: auto;
   border-radius: 50px;
 }
 
@@ -75,17 +72,11 @@
 /* Navbar container */
 #navbar {
   background-color: #222;
-  padding: 1rem 2rem;
 }
 
 /* Navbar logo */
 .navbar-logo {
   display: inline-block;
-}
-
-.navbar-logo .logo {
-  height: 40px;
-  width: auto;
 }
 
 /* Navbar container for links */
@@ -95,11 +86,11 @@
   align-items: center;
 }
 
-/* Navbar links */
+/* Navbar links
 .navbar-links {
   display: flex;
   align-items: center;
-}
+} */
 
 /* List of navigation items */
 .nav-list {
@@ -109,26 +100,13 @@
   padding: 0;
 }
 
+.nav-list:hover {
+  max-height: fit-content;
+}
+
 /* Individual nav items */
 .nav-item {
   margin-right: 1.5rem;
-}
-
-/* Links styling */
-.nav-link {
-  color: #ffffff;
-  font-size: 1rem;
-  text-decoration: none;
-  transition: color 0.3s ease;
-}
-
-.nav-link:hover {
-  color: #00d1b2; /* Accent color on hover */
-}
-
-.nav-link.active {
-  color: #00d1b2;
-  font-weight: bold;
 }
 
 /* Search form styling */
@@ -145,6 +123,7 @@
   background-color: #333;
   color: white;
   margin-right: 0.5rem;
+  width: 40vw;
 }
 
 .search-input:focus {

@@ -15,6 +15,12 @@
   margin-top: 6vh;
 }
 
+@media (max-width: 768px) {
+  .home {
+    margin-top: 46vh;
+  }
+}
+
 .header {
   background: rgba(0, 0, 0, 0.7);
   padding: 50px 20px;
