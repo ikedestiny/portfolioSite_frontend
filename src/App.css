@@ -3,126 +3,12 @@
 }
 
 /* blog */
-
-.blogHome {
-  margin-top: 7vh;
-  background-color: #f9f9f9;
-}
 .contact-home {
   margin-top: 10vh;
   background-image: url("/public/projectsBack.png");
   min-height: 100vh;
   background-size: cover;
   background-position: center;
-}
-
-@media (max-width: 768px) {
-  .blogHome,
-  .contact-home {
-    margin-top: 48vh;
-  }
-}
-
-/* General styles for the body */
-body {
-  font-family: "Arial", sans-serif;
-  line-height: 1.6;
-  margin: 0;
-  padding: 0;
-  color: #333;
-}
-
-/* Blog main container */
-.mainBlog {
-  max-width: 800px;
-  margin: 20px auto;
-  background: #fff;
-  padding: 20px;
-  border-radius: 8px;
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
-}
-
-/* Blog image */
-.mainBlog img {
-  max-width: 70%;
-  height: auto;
-  border-radius: 8px;
-  margin-bottom: 20px;
-}
-
-/* Blog title */
-.mainBlog h1 {
-  font-size: 2.4em;
-  font-weight: bold;
-  color: #222;
-  margin-bottom: 10px;
-}
-
-/* Blog metadata (date and author) */
-.blog-meta {
-  display: flex;
-  justify-content: space-between;
-  font-size: 0.9em;
-  color: #666;
-  margin-bottom: 20px;
-  border-bottom: 1px solid #eaeaea;
-  padding-bottom: 10px;
-}
-
-.blog-meta span {
-  font-style: italic;
-}
-
-/* Blog content paragraphs */
-.mainBlog p {
-  font-size: 1.1em;
-  line-height: 1.8;
-  text-align: justify;
-  margin-bottom: 20px;
-}
-
-/* Add styles for blockquote (optional) */
-.mainBlog blockquote {
-  font-size: 1.2em;
-  font-style: italic;
-  color: #555;
-  border-left: 4px solid #ccc;
-  margin: 20px 0;
-  padding-left: 15px;
-}
-
-/* Add hover effect to links (if any) */
-.mainBlog a {
-  color: #007bff;
-  text-decoration: none;
-}
-
-.mainBlog a:hover {
-  text-decoration: underline;
-}
-
-.blogs {
-  display: flex;
-  justify-content: center;
-  flex-wrap: wrap;
-}
-
-.blog {
-  > img {
-    width: 10rem;
-    height: 8rem;
-    margin: 10px;
-    background-color: rgba(255, 255, 255, 0.473);
-  }
-  border: 1px solid rgba(255, 255, 255, 0.674);
-  box-shadow: 3px 4px 6px rgba(0, 0, 0, 0.3);
-  padding: 5px;
-  margin: 10px;
-
-  > a {
-    text-decoration: none;
-    color: black;
-  }
 }
 
 .page-title {
@@ -138,6 +24,12 @@ body {
   background: #00b89a; /* Gradient text effect */
   -webkit-background-clip: text; /* Show only the text on the gradient */
   -webkit-text-fill-color: transparent; /* Make the text transparent */
+}
+@media (max-width: 768px) {
+  .blogHome,
+  .contact-home {
+    margin-top: 48vh;
+  }
 }
 
 @media (max-width: 768px) {

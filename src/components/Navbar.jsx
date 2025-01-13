@@ -19,7 +19,7 @@ export default function Navbar() {
                             <a className="nav-link active" href="/">Home</a>
                         </li>
                         <li className="nav-item">
-                            <a className="nav-link" href="/blog">Blog</a>
+                            <a className="nav-link" href="/blogs">Blog</a>
                         </li>
                         <li className="nav-item">
                             <a className="nav-link" href="/resume">Resume</a>

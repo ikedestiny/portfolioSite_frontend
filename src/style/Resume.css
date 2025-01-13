@@ -20,9 +20,12 @@ h2 {
   margin-right: 10px;
 }
 .resume-home {
-  background-color: var(--background-color);
+  background-image: url("https://media.giphy.com/media/bJ4TVNYNUympPgcpem/giphy.gif");
+  background-size: 80%; /* Ensure it covers the entire screen */
+  background-position: center; /* Center the GIF */
+  background-repeat: no-repeat; /* Prevent repetition of the GIF */
+  height: 100%; /* Make sure the background covers the full height */
   color: var(--text-color);
-  height: 100vh;
   padding: 1rem;
   font-family: "Courier New", Courier, monospace;
   display: flex;
