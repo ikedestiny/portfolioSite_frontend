@@ -1,0 +1,108 @@
+/* General Styles */
+
+/* Container Styling */
+.contact-home {
+  font-family: "Arial", sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  padding: 20px;
+  background-image: url("https://media.giphy.com/media/KCpK92XQHCutWBUz3W/giphy.gif"); /* GIF background */
+  background-size: cover; /* Cover the entire element */
+  background-position: center; /* Center the background */
+  display: flex;
+  flex-direction: column;
+}
+
+.row {
+  width: fit-content;
+}
+
+.card-header {
+  background-color: #343a40;
+  color: #fff;
+  padding: 15px;
+  width: fit-content;
+  border-bottom: 1px solid #495057;
+  /* z-index: 2; Ensure header is above the overlay */
+}
+
+.card-body {
+  padding: 20px;
+  position: relative;
+  z-index: 2; /* Ensure body is above the overlay */
+}
+
+/* Form Styling */
+.form-group {
+  margin-bottom: 15px;
+}
+
+.form-label {
+  display: block;
+  margin-bottom: 5px;
+  font-weight: bolder;
+  color: #2cab98;
+}
+
+.form-control {
+  width: 100%;
+  padding: 10px;
+  margin-top: 5px;
+  border: 1px solid #ced4da;
+  border-radius: 4px;
+  box-sizing: border-box;
+  background-color: rgba(
+    255,
+    255,
+    255,
+    0.9
+  ); /* Semi-transparent background for inputs */
+}
+
+.form-control:focus {
+  border-color: #80bdff;
+  outline: none;
+}
+
+/* Button Styling */
+.button-group {
+  display: flex;
+  justify-content: center;
+}
+
+.btn {
+  padding: 10px 20px;
+  border: none;
+  border-radius: 4px;
+  background-color: #28a745;
+  color: #fff;
+  font-size: 1em;
+  cursor: pointer;
+}
+
+.btn:hover {
+  background-color: #218838;
+}
+
+.btn-success {
+  background-color: #28a745;
+}
+
+.btn-success:hover {
+  background-color: #218838;
+}
+
+/* Text Alignment and Colors */
+.text-center {
+  text-align: center;
+}
+
+.bg-secondary {
+  background-color: #6c757d;
+}
+
+.text-white {
+  color: #fff;
+}

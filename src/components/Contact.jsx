@@ -1,55 +1,54 @@
 import { MdContactPhone } from "react-icons/md";
+import '../style/Contact.css'; // Import the custom CSS file
+
 export default function Contact() {
     return (
-
         <div className="contact-home">
-            <div className="row justify-content-center mt-5">
-                <div className="card shadow">
-                    <div className="card-header text-center bg-secondary text-white">
-                        <h3 className="page-title">Contact Us!  <MdContactPhone style={{ color: "white" }} /></h3>
-                    </div>
-                    <div className="card-body">
-                        {/* <form onSubmit={handleSubmit}> */}
-                        <form>
+            <div className="card-header text-center bg-secondary text-white">
+                <h3 className="page-title">Contact Us! <MdContactPhone style={{ color: "white" }} /></h3>
+            </div>
+            <div className="card">
 
-                            <div className="mb-3">
-                                <label htmlFor="email" className="form-label">Email</label>
-                                <input
-                                    type="email"
-                                    className="form-control"
-                                    id="email"
-                                    name="email"
-
-                                    required
-                                />
-                            </div>
-                            <div className="mb-3">
-                                <label htmlFor="password" className="form-label">Fullname</label>
-                                <input
-                                    type="password"
-                                    className="form-control"
-                                    id="password"
-                                    name="password"
-
-                                    required
-                                />
-                            </div>
-                            <div class="mb-3">
-                                <label for="message" class="form-label">Your Message</label>
-                                <textarea class="form-control" id="message" name="message" rows="4" required></textarea>
-                            </div>
-                            <div className="d-grid">
-                                <button onClick="" type="submit" className="btn btn-success">
-                                    Login!
-                                </button>
-                            </div>
-                        </form>
-                    </div>
+                <div className="card-body">
+                    <form>
+                        <div className="form-group">
+                            <label htmlFor="email" className="form-label">Email</label>
+                            <input
+                                type="email"
+                                className="form-control"
+                                id="email"
+                                name="email"
+                                required
+                            />
+                        </div>
+                        <div className="form-group">
+                            <label htmlFor="fullname" className="form-label">Fullname</label>
+                            <input
+                                type="text"
+                                className="form-control"
+                                id="fullname"
+                                name="fullname"
+                                required
+                            />
+                        </div>
+                        <div className="form-group">
+                            <label htmlFor="message" className="form-label">Your Message</label>
+                            <textarea
+                                className="form-control"
+                                id="message"
+                                name="message"
+                                rows="4"
+                                required
+                            ></textarea>
+                        </div>
+                        <div className="button-group">
+                            <button type="submit" className="btn btn-success">
+                                Submit!
+                            </button>
+                        </div>
+                    </form>
                 </div>
             </div>
         </div>
-
-
-    )
-
+    );
 }

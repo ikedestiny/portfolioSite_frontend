@@ -11,12 +11,11 @@
   justify-content: center;
   padding: 20px;
   text-align: center;
-  margin-top: 6vh;
 }
 
 @media (max-width: 768px) {
   .home {
-    margin-top: 46vh;
+    margin-top: 6vh;
   }
 }
 

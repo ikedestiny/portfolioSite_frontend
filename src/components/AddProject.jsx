@@ -25,67 +25,65 @@ export default function AddProject() {
 
     return (
         <div className="main">
-            <div className="row justify-content-center mt-5">
-                <div className="card shadow" style={{ minWidth: "300px" }}>
-                    <div className="card-header text-center bg-secondary text-white">
-                        <h3 className="page-title">ADD PROJECT!</h3>
-                    </div>
-                    <div className="card-body">
-                        <form onSubmit={handleSubmit}>
-                            <div className="mb-3">
-                                <label htmlFor="name" className="form-label">Name of Project</label>
-                                <input
-                                    type="text"
-                                    className="form-control"
-                                    id="name"
-                                    name="name"
-                                    onChange={(e) => set_project_name(e.target.value)}
-                                    value={name}
-                                    required
-                                />
-                            </div>
-                            <div className="mb-3">
-                                <label htmlFor="site" className="form-label">Project Website</label>
-                                <input
-                                    type="text"
-                                    className="form-control"
-                                    id="site"
-                                    name="site"
-                                    onChange={(e) => set_project_website(e.target.value)}
-                                    value={website}
-                                />
-                            </div>
-                            <div className="mb-3">
-                                <label htmlFor="repo" className="form-label">Github Repository</label>
-                                <input
-                                    type="text"
-                                    className="form-control"
-                                    id="repo"
-                                    name="repo"
-                                    onChange={(e) => set_project_repository(e.target.value)}
-                                    value={repository}
-                                    required
-                                />
-                            </div>
-                            <div className="mb-3">
-                                <label htmlFor="desc" className="form-label">Project Description</label>
-                                <textarea
-                                    className="form-control"
-                                    id="desc"
-                                    name="desc"
-                                    rows="4"
-                                    onChange={(e) => set_project_description(e.target.value)}
-                                    value={description}
-                                    required
-                                ></textarea>
-                            </div>
-                            <div className="d-grid">
-                                <button type="submit" className="btn btn-success">
-                                    Send
-                                </button>
-                            </div>
-                        </form>
-                    </div>
+            <div className="card shadow" >
+                <div className="card-header text-center bg-secondary text-white">
+                    <h3 className="page-title">ADD PROJECT!</h3>
+                </div>
+                <div className="card-body">
+                    <form onSubmit={handleSubmit}>
+                        <div className="mb-3">
+                            <label htmlFor="name" className="form-label">Name of Project</label>
+                            <input
+                                type="text"
+                                className="form-control"
+                                id="name"
+                                name="name"
+                                onChange={(e) => set_project_name(e.target.value)}
+                                value={name}
+                                required
+                            />
+                        </div>
+                        <div className="mb-3">
+                            <label htmlFor="site" className="form-label">Project Website</label>
+                            <input
+                                type="text"
+                                className="form-control"
+                                id="site"
+                                name="site"
+                                onChange={(e) => set_project_website(e.target.value)}
+                                value={website}
+                            />
+                        </div>
+                        <div className="mb-3">
+                            <label htmlFor="repo" className="form-label">Github Repository</label>
+                            <input
+                                type="text"
+                                className="form-control"
+                                id="repo"
+                                name="repo"
+                                onChange={(e) => set_project_repository(e.target.value)}
+                                value={repository}
+                                required
+                            />
+                        </div>
+                        <div className="mb-3">
+                            <label htmlFor="desc" className="form-label">Project Description</label>
+                            <textarea
+                                className="form-control"
+                                id="desc"
+                                name="desc"
+                                rows="4"
+                                onChange={(e) => set_project_description(e.target.value)}
+                                value={description}
+                                required
+                            ></textarea>
+                        </div>
+                        <div className="d-grid">
+                            <button type="submit" className="btn btn-success">
+                                Send
+                            </button>
+                        </div>
+                    </form>
                 </div>
             </div>
         </div>

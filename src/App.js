@@ -10,12 +10,13 @@ import Projects from './components/Projects';
 import Contact from './components/Contact';
 import AddProject from './components/AddProject'
 import BlogDetail from './components/BlogDetail';
+import CreateBlog from './components/CreateBlog'
 
 function App() {
   return (
     <div className="App">
-      <Navbar />
       <Router>
+        <Navbar />
         <Routes>
           <Route exact path='/' element={<Home />} />
           <Route exact path='/blogs' element={<Blogs />} />
@@ -24,6 +25,7 @@ function App() {
           <Route exact path='/contact' element={<Contact />} />
           <Route exact path='/add_project' element={<AddProject />} />
           <Route exact path='/blogs/:id' element={<BlogDetail />} />
+          <Route exact path='/write-blog' element={<CreateBlog />} />
         </Routes>
       </Router>
     </div>

@@ -2,9 +2,15 @@ import useProjectStore from '../state/ProjectStore';
 import { useEffect } from 'react';
 import Project from "./Project";
 import '../style/Project.css';
+import { useNavigate } from 'react-router-dom';
 
 export default function Projects() {
     const { get_all, projects } = useProjectStore();
+    const navigate = useNavigate()
+    const handleClick = (e, link) => {
+        e.preventDefault();
+        navigate(link);
+    };
 
     useEffect(() => {
         get_all();
@@ -12,7 +18,9 @@ export default function Projects() {
 
     return (
         <div className="main">
-            <h1 className='page-title mt-5'>All projects</h1>
+            <div className="card-header text-center bg-secondary text-white">
+                <h3 className="page-title">All Projects</h3>
+            </div>
             <div className="projects">
                 {projects.map(project => (
                     <Project
@@ -24,7 +32,7 @@ export default function Projects() {
                     />
                 ))}
             </div>
-            <a className="download-button" href="/add_project">Add Project</a>
+            <button className='glow-button' onClick={(e) => handleClick(e, `/add_project`)}>Add Project</button>
         </div>
     );
 }

@@ -3,15 +3,13 @@ import { useEffect, useState } from "react";
 import useBlogStore from '../state/BlogStore';
 import "../style/BlogDetail.css";
 function parseDateString(dateString) {
-    if (dateString.length !== 10) {
-        throw new Error("Invalid date string format");
-    }
+
 
     const year = dateString.substring(0, 4);
-    const month = dateString.substring(4, 5);
-    const day = dateString.substring(5, 6);
-    const hour = dateString.substring(6, 8);
-    const minute = dateString.substring(8, 12);
+    const month = dateString.substring(4, 6);
+    const day = dateString.substring(6, 8);
+    const hour = dateString.substring(8, 10);
+    const minute = dateString.substring(10, 12);
 
     const date = new Date(year, month - 1, day, hour, minute);
 
@@ -49,8 +47,8 @@ export default function BlogDetail() {
         <div className="blog-detail-container">
             <h1 className="blog-title">{blog.title}</h1>
             <div className="blog-meta">
-                <span className="blog-author">By {blog.author}</span>
-                <span className="blog-created">{new Date(dateString).toLocaleDateString()}</span>
+                <span className="blog-author">{blog.author}</span>
+                <span className="blog-created">{parseDateString(dateString)}</span>
             </div>
             {blog.paragraphs.map((para, index) => (
                 <div key={index} className="blog-paragraph-container">

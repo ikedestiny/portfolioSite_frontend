@@ -6,13 +6,7 @@
   --background2: #1c1818;
   --secondary-background: #2d2d2d;
 }
-body {
-  background-color: black;
-}
-h1,
-h2 {
-  color: #00d1b2;
-}
+
 .tech-icon {
   font-size: 24px;
   width: 24px;
@@ -20,25 +14,24 @@ h2 {
   margin-right: 10px;
 }
 .resume-home {
-  background-image: url("https://media.giphy.com/media/bJ4TVNYNUympPgcpem/giphy.gif");
-  background-size: 80%; /* Ensure it covers the entire screen */
-  background-position: center; /* Center the GIF */
-  background-repeat: no-repeat; /* Prevent repetition of the GIF */
-  height: 100%; /* Make sure the background covers the full height */
   color: var(--text-color);
   padding: 1rem;
   font-family: "Courier New", Courier, monospace;
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
-  margin-top: 15rem;
+  align-items: center;
+  width: 100vw;
 }
 
-@media (max-width: 768px) {
-  .resume-home {
-    margin-top: 46vh;
-  }
+#content-to-print {
+  background-color: black;
+  background-image: url("https://media.giphy.com/media/bJ4TVNYNUympPgcpem/giphy.gif");
+  background-size: cover; /* Ensure it covers the entire screen */
+  background-position: center; /* Center the GIF */
+  background-repeat: no-repeat; /* Prevent repetition of the GIF */
 }
+
 .desc-im {
   display: flex;
   flex-direction: column;
@@ -66,6 +59,7 @@ h2 {
   border-radius: 5px;
   max-height: 500px;
   color: var(--text-color);
+  margin-bottom: 2vh;
 }
 
 .socials > a {
@@ -122,8 +116,8 @@ b {
   text-align: center;
   color: white;
   width: fit-content;
-  height: auto;
-  margin-top: auto;
+  height: fit-content;
+  margin-top: 10vh;
 }
 .card h2 {
   color: #e06c75;
